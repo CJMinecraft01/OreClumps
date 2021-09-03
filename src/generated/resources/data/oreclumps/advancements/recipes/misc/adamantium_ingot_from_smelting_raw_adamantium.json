@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "oreclumps:adamantium_ingot_from_smelting_raw_adamantium"
+    ]
+  },
+  "criteria": {
+    "has_raw_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "oreclumps:raw_adamantium"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oreclumps:adamantium_ingot_from_smelting_raw_adamantium"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

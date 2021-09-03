@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "oreclumps:mythril_ingot_from_blasting_raw_mythril"
+    ]
+  },
+  "criteria": {
+    "has_raw_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "oreclumps:raw_mythril"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oreclumps:mythril_ingot_from_blasting_raw_mythril"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

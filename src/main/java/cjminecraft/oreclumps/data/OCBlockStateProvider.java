@@ -30,6 +30,8 @@ public class OCBlockStateProvider extends BlockStateProvider {
         simpleBlock(OCBlocks.RAW_THORIUM_BLOCK.get());
         simpleBlock(OCBlocks.RAW_TITANIUM_BLOCK.get());
         simpleBlock(OCBlocks.RAW_TUNGSTEN_BLOCK.get());
+        simpleBlock(OCBlocks.RAW_ADAMANTIUM_BLOCK.get());
+        simpleBlock(OCBlocks.RAW_MYTHRIL_BLOCK.get());
 
         cubeAll(OCBlocks.RAW_IRON_BLOCK.get());
         cubeAll(OCBlocks.RAW_GOLD_BLOCK.get());
@@ -48,5 +50,7 @@ public class OCBlockStateProvider extends BlockStateProvider {
         cubeAll(OCBlocks.RAW_THORIUM_BLOCK.get());
         cubeAll(OCBlocks.RAW_TITANIUM_BLOCK.get());
         cubeAll(OCBlocks.RAW_TUNGSTEN_BLOCK.get());
+        cubeAll(OCBlocks.RAW_ADAMANTIUM_BLOCK.get());
+        cubeAll(OCBlocks.RAW_MYTHRIL_BLOCK.get());
     }
 }

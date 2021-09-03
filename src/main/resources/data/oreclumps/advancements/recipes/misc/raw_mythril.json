@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "oreclumps:raw_mythril"
+    ]
+  },
+  "criteria": {
+    "has_raw_ore_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "oreclumps:raw_mythril_block"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oreclumps:raw_mythril"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_ore_block",
+      "has_the_recipe"
+    ]
+  ]
+}

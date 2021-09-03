@@ -59,7 +59,9 @@ public class OCLootTableProvider extends LootTableProvider {
                 addSingleBlockDrop("raw_platinum_block", OCBlocks.RAW_PLATINUM_BLOCK_ITEM),
                 addSingleBlockDrop("raw_thorium_block", OCBlocks.RAW_THORIUM_BLOCK_ITEM),
                 addSingleBlockDrop("raw_titanium_block", OCBlocks.RAW_TITANIUM_BLOCK_ITEM),
-                addSingleBlockDrop("raw_tungsten_block", OCBlocks.RAW_TUNGSTEN_BLOCK_ITEM)
+                addSingleBlockDrop("raw_tungsten_block", OCBlocks.RAW_TUNGSTEN_BLOCK_ITEM),
+                addSingleBlockDrop("raw_adamantium_block", OCBlocks.RAW_ADAMANTIUM_BLOCK_ITEM),
+                addSingleBlockDrop("raw_mythril_block", OCBlocks.RAW_MYTHRIL_BLOCK_ITEM)
         );
     }
 }

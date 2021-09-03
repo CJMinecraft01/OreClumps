@@ -36,6 +36,8 @@ public class OCRecipeProvider extends RecipeProvider {
         rawOreRecipes(consumer, OCItems.RAW_THORIUM, OCBlocks.RAW_THORIUM_BLOCK_ITEM, OCItems.THORIUM_INGOT, "thorium");
         rawOreRecipes(consumer, OCItems.RAW_TITANIUM, OCBlocks.RAW_TITANIUM_BLOCK_ITEM, OCItems.TITANIUM_INGOT, "titanium");
         rawOreRecipes(consumer, OCItems.RAW_TUNGSTEN, OCBlocks.RAW_TUNGSTEN_BLOCK_ITEM, OCItems.TUNGSTEN_INGOT, "tungsten");
+        rawOreRecipes(consumer, OCItems.RAW_ADAMANTIUM, OCBlocks.RAW_ADAMANTIUM_BLOCK_ITEM, OCItems.ADAMANTIUM_INGOT, "adamantium");
+        rawOreRecipes(consumer, OCItems.RAW_MYTHRIL, OCBlocks.RAW_MYTHRIL_BLOCK_ITEM, OCItems.MYTHRIL_INGOT, "mythril");
     }
 
     private static void rawOreRecipes(Consumer<IFinishedRecipe> consumer, RegistryObject<Item> raw, RegistryObject<Item> rawBlock, Item ingot, float xp, String name) {

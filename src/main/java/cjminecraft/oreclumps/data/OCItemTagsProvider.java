@@ -34,7 +34,9 @@ public class OCItemTagsProvider extends ItemTagsProvider {
                 OCItems.PLATINUM_INGOT.get(),
                 OCItems.THORIUM_INGOT.get(),
                 OCItems.TITANIUM_INGOT.get(),
-                OCItems.TUNGSTEN_INGOT.get()
+                OCItems.TUNGSTEN_INGOT.get(),
+                OCItems.ADAMANTIUM_INGOT.get(),
+                OCItems.MYTHRIL_INGOT.get()
         );
 
         tag(Tags.Items.ORES).add(
@@ -54,7 +56,9 @@ public class OCItemTagsProvider extends ItemTagsProvider {
                 OCItems.RAW_PLATINUM.get(),
                 OCItems.RAW_THORIUM.get(),
                 OCItems.RAW_TITANIUM.get(),
-                OCItems.RAW_TUNGSTEN.get()
+                OCItems.RAW_TUNGSTEN.get(),
+                OCItems.RAW_ADAMANTIUM.get(),
+                OCItems.RAW_MYTHRIL.get()
         );
 
         tag(Tags.Items.ORES_IRON).add(OCItems.RAW_IRON.get());
@@ -89,6 +93,10 @@ public class OCItemTagsProvider extends ItemTagsProvider {
                 .add(OCItems.RAW_TITANIUM.get());
         tag(ItemTags.createOptional(new ResourceLocation("forge", "ores/tungsten")))
                 .add(OCItems.RAW_TUNGSTEN.get());
+        tag(ItemTags.createOptional(new ResourceLocation("forge", "ores/adamantium")))
+                .add(OCItems.RAW_ADAMANTIUM.get());
+        tag(ItemTags.createOptional(new ResourceLocation("forge", "ores/mythril")))
+                .add(OCItems.RAW_MYTHRIL.get());
 
         tag(ItemTags.createOptional(new ResourceLocation("forge", "ingots/copper")))
                 .add(OCItems.COPPER_INGOT.get());
@@ -120,5 +128,9 @@ public class OCItemTagsProvider extends ItemTagsProvider {
                 .add(OCItems.TITANIUM_INGOT.get());
         tag(ItemTags.createOptional(new ResourceLocation("forge", "ingots/tungsten")))
                 .add(OCItems.TUNGSTEN_INGOT.get());
+        tag(ItemTags.createOptional(new ResourceLocation("forge", "ingots/adamantium")))
+                .add(OCItems.ADAMANTIUM_INGOT.get());
+        tag(ItemTags.createOptional(new ResourceLocation("forge", "ingots/mythril")))
+                .add(OCItems.MYTHRIL_INGOT.get());
     }
 }

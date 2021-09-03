@@ -17,6 +17,8 @@
     "oreclumps:raw_platinum",
     "oreclumps:raw_thorium",
     "oreclumps:raw_titanium",
-    "oreclumps:raw_tungsten"
+    "oreclumps:raw_tungsten",
+    "oreclumps:raw_adamantium",
+    "oreclumps:raw_mythril"
   ]
 }

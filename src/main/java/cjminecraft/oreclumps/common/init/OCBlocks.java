@@ -36,6 +36,8 @@ public class OCBlocks {
     public static final RegistryObject<Block> RAW_THORIUM_BLOCK = BLOCKS.register("raw_thorium_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
     public static final RegistryObject<Block> RAW_TITANIUM_BLOCK = BLOCKS.register("raw_titanium_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
     public static final RegistryObject<Block> RAW_TUNGSTEN_BLOCK = BLOCKS.register("raw_tungsten_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
+    public static final RegistryObject<Block> RAW_ADAMANTIUM_BLOCK = BLOCKS.register("raw_adamantium_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
+    public static final RegistryObject<Block> RAW_MYTHRIL_BLOCK = BLOCKS.register("raw_mythril_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
 
     public static final RegistryObject<Item> RAW_IRON_BLOCK_ITEM = ITEMS.register("raw_iron_block", () -> new BlockItem(RAW_IRON_BLOCK.get(), PROPERTIES));
     public static final RegistryObject<Item> RAW_GOLD_BLOCK_ITEM = ITEMS.register("raw_gold_block", () -> new BlockItem(RAW_GOLD_BLOCK.get(), PROPERTIES));
@@ -54,5 +56,7 @@ public class OCBlocks {
     public static final RegistryObject<Item> RAW_THORIUM_BLOCK_ITEM = ITEMS.register("raw_thorium_block", () -> new BlockItem(RAW_THORIUM_BLOCK.get(), PROPERTIES));
     public static final RegistryObject<Item> RAW_TITANIUM_BLOCK_ITEM = ITEMS.register("raw_titanium_block", () -> new BlockItem(RAW_TITANIUM_BLOCK.get(), PROPERTIES));
     public static final RegistryObject<Item> RAW_TUNGSTEN_BLOCK_ITEM = ITEMS.register("raw_tungsten_block", () -> new BlockItem(RAW_TUNGSTEN_BLOCK.get(), PROPERTIES));
+    public static final RegistryObject<Item> RAW_ADAMANTIUM_BLOCK_ITEM = ITEMS.register("raw_adamantium_block", () -> new BlockItem(RAW_ADAMANTIUM_BLOCK.get(), PROPERTIES));
+    public static final RegistryObject<Item> RAW_MYTHRIL_BLOCK_ITEM = ITEMS.register("raw_mythril_block", () -> new BlockItem(RAW_MYTHRIL_BLOCK.get(), PROPERTIES));
 
 }

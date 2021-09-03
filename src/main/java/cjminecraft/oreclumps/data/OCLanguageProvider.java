@@ -36,6 +36,8 @@ public class OCLanguageProvider extends LanguageProvider {
                 addItem(OCItems.RAW_THORIUM, "Raw Thorium");
                 addItem(OCItems.RAW_TITANIUM, "Raw Titanium");
                 addItem(OCItems.RAW_TUNGSTEN, "Raw Tungsten");
+                addItem(OCItems.RAW_ADAMANTIUM, "Raw Adamantium");
+                addItem(OCItems.RAW_MYTHRIL, "Raw Mythril");
 
                 addItem(OCItems.COPPER_INGOT, "Copper Ingot");
                 addItem(OCItems.LEAD_INGOT, "Lead Ingot");
@@ -52,6 +54,8 @@ public class OCLanguageProvider extends LanguageProvider {
                 addItem(OCItems.THORIUM_INGOT, "Thorium Ingot");
                 addItem(OCItems.TITANIUM_INGOT, "Titanium Ingot");
                 addItem(OCItems.TUNGSTEN_INGOT, "Tungsten Ingot");
+                addItem(OCItems.ADAMANTIUM_INGOT, "Adamantium Ingot");
+                addItem(OCItems.MYTHRIL_INGOT, "Mythril Ingot");
 
                 addBlock(OCBlocks.RAW_IRON_BLOCK, "Block of Raw Iron");
                 addBlock(OCBlocks.RAW_GOLD_BLOCK, "Block of Raw Gold");
@@ -70,6 +74,8 @@ public class OCLanguageProvider extends LanguageProvider {
                 addBlock(OCBlocks.RAW_THORIUM_BLOCK, "Block of Raw Thorium");
                 addBlock(OCBlocks.RAW_TITANIUM_BLOCK, "Block of Raw Titanium");
                 addBlock(OCBlocks.RAW_TUNGSTEN_BLOCK, "Block of Raw Tungsten");
+                addBlock(OCBlocks.RAW_ADAMANTIUM_BLOCK, "Block of Raw Adamantium");
+                addBlock(OCBlocks.RAW_MYTHRIL_BLOCK, "Block of Raw Mythril");
                 break;
         }
     }

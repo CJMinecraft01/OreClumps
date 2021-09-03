@@ -30,6 +30,8 @@ public class OCItemModelProvider extends ItemModelProvider {
         generated("raw_thorium");
         generated("raw_titanium");
         generated("raw_tungsten");
+        generated("raw_adamantium");
+        generated("raw_mythril");
 
         block("raw_iron_block");
         block("raw_gold_block");
@@ -48,6 +50,8 @@ public class OCItemModelProvider extends ItemModelProvider {
         block("raw_thorium_block");
         block("raw_titanium_block");
         block("raw_tungsten_block");
+        block("raw_adamantium_block");
+        block("raw_mythril_block");
 
         generated("copper_ingot");
         generated("lead_ingot");
@@ -64,6 +68,8 @@ public class OCItemModelProvider extends ItemModelProvider {
         generated("thorium_ingot");
         generated("titanium_ingot");
         generated("tungsten_ingot");
+        generated("adamantium_ingot");
+        generated("mythril_ingot");
     }
 
     private void block(String name) {

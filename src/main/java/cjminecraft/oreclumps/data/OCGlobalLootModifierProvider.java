@@ -51,6 +51,8 @@ public class OCGlobalLootModifierProvider extends GlobalLootModifierProvider {
         add("raw_thorium", OCLootModifiers.RAW_ORE_MODIFIER.get(), new RawOreModifier(conditions, functions, "forge:ores/thorium", OCItems.RAW_THORIUM.get()));
         add("raw_titanium", OCLootModifiers.RAW_ORE_MODIFIER.get(), new RawOreModifier(conditions, functions, "forge:ores/titanium", OCItems.RAW_TITANIUM.get()));
         add("raw_tungsten", OCLootModifiers.RAW_ORE_MODIFIER.get(), new RawOreModifier(conditions, functions, "forge:ores/tungsten", OCItems.RAW_TUNGSTEN.get()));
+        add("raw_adamantium", OCLootModifiers.RAW_ORE_MODIFIER.get(), new RawOreModifier(conditions, functions, "forge:ores/adamantium", OCItems.RAW_ADAMANTIUM.get()));
+        add("raw_mythril", OCLootModifiers.RAW_ORE_MODIFIER.get(), new RawOreModifier(conditions, functions, "forge:ores/mythril", OCItems.RAW_MYTHRIL.get()));
     }
 
 

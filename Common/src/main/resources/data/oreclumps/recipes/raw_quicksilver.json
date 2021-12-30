@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oreclumps:raw_quicksilver_block"
+    }
+  ],
+  "result": {
+    "item": "oreclumps:raw_quicksilver",
+    "count": 9
+  }
+}

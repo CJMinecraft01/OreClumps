@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cjminecraft.oreclumps.fabric.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "LootTableMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+  }
+  

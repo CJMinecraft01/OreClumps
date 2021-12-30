@@ -154,7 +154,7 @@ def save_transparent_gif(images: List[Image], durations: Union[int, List[int]], 
     root_frame, save_args = _create_animated_gif(images, durations)
     root_frame.save(save_file, **save_args)
 
-image_directory = Path("./src/main/resources/assets/oreclumps/textures/item/")
+image_directory = Path("./Common/src/main/resources/assets/oreclumps/textures/item/")
 
 size = 400
 

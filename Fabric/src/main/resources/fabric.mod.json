@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "oreclumps",
+    "version": "${version}",
+  
+    "name": "OreClumps",
+    "description": "Adds raw ores for modded ores!",
+    "authors": [
+      "CJMinecraft"
+    ],
+  
+    "license": "GNU GPLv3",
+  
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "cjminecraft.oreclumps.fabric.OreClumps"
+      ]
+    },
+    "mixins": [
+      "oreclumps.mixins.json"
+    ],
+  
+    "depends": {
+      "fabricloader": ">=0.12",
+      "fabric": "*",
+      "minecraft": "1.18.x",
+      "java": ">=17"
+    },
+    "suggests": {
+
+    }
+  }
+  

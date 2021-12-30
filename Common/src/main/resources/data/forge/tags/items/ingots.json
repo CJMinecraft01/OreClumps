@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "oreclumps:lead_ingot",
+    "oreclumps:nickel_ingot",
+    "oreclumps:silver_ingot",
+    "oreclumps:tin_ingot",
+    "oreclumps:osmium_ingot",
+    "oreclumps:uranium_ingot",
+    "oreclumps:zinc_ingot",
+    "oreclumps:aluminum_ingot",
+    "oreclumps:chromium_ingot",
+    "oreclumps:cobalt_ingot",
+    "oreclumps:platinum_ingot",
+    "oreclumps:thorium_ingot",
+    "oreclumps:titanium_ingot",
+    "oreclumps:tungsten_ingot",
+    "oreclumps:adamantium_ingot",
+    "oreclumps:mythril_ingot",
+    "oreclumps:quicksilver_ingot"
+  ]
+}

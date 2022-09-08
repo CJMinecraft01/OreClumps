@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "oreclumps:raw_lead"
-  },
-  "result": "oreclumps:lead_ingot",
-  "experience": 0.7,
-  "cookingtime": 100
-}

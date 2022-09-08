@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "oreclumps:raw_adamantium"
-  },
-  "result": "oreclumps:adamantium_ingot",
-  "experience": 0.7,
-  "cookingtime": 100
-}

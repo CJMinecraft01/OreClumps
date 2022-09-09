@@ -2,6 +2,7 @@ package cjminecraft.oreclumps.forge;
 
 import cjminecraft.oreclumps.common.Constants;
 import cjminecraft.oreclumps.forge.common.init.OCItems;
+import cjminecraft.oreclumps.forge.common.init.OCLootModifiers;
 import cjminecraft.oreclumps.forge.common.init.OCRecipes;
 import cjminecraft.oreclumps.forge.data.OCItemModelProvider;
 import cjminecraft.oreclumps.forge.data.OCItemTagsProvider;
@@ -27,6 +28,7 @@ public class OreClumps {
 
         OCItems.ITEMS.register(mod);
         OCRecipes.SERIALIZERS.register(mod);
+        OCLootModifiers.LOOT_MODIFIERS.register(mod);
         // todo: need to have the raw ore blocks
     }
 

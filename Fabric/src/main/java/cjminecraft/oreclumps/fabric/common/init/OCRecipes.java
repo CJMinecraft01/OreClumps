@@ -10,10 +10,10 @@ import net.minecraft.world.item.crafting.SmeltingRecipe;
 
 public class OCRecipes {
 
-    public static RecipeSerializer<?> RAW_ORE_SMELTING_RECIPE_SERIALIZER;
-    public static RecipeSerializer<?> RAW_ORE_BLASTING_RECIPE_SERIALIZER;
+    public static RawOreRecipeSerializer<?> RAW_ORE_SMELTING_RECIPE_SERIALIZER;
+    public static RawOreRecipeSerializer<?> RAW_ORE_BLASTING_RECIPE_SERIALIZER;
 
-    private static RecipeSerializer<?> register(String name, RecipeSerializer<?> serializer) {
+    private static <T extends RecipeSerializer<?>> T register(String name, T serializer) {
         return Registry.register(
                 Registry.RECIPE_SERIALIZER,
                 new ResourceLocation(Constants.MODID, name),

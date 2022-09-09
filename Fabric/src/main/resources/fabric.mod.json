@@ -1,38 +1,35 @@
 {
-    "schemaVersion": 1,
-    "id": "oreclumps",
-    "version": "${version}",
-  
-    "name": "OreClumps",
-    "description": "Adds raw ores for modded ores!",
-    "authors": [
-      "CJMinecraft"
+  "schemaVersion": 1,
+  "id": "oreclumps",
+  "version": "${version}",
+  "name": "OreClumps",
+  "description": "Adds raw ores for modded ores!",
+  "authors": [
+    "CJMinecraft"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/ore-clumps",
+    "sources": "https://github.com/CJMinecraft01/OreClumps"
+  },
+  "license": "GNU GPLv3",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cjminecraft.oreclumps.fabric.OreClumps"
     ],
-    "contact": {
-      "homepage": "https://www.curseforge.com/minecraft/mc-mods/ore-clumps",
-      "sources": "https://github.com/CJMinecraft01/OreClumps"
-    },
-  
-    "license": "GNU GPLv3",
-  
-    "environment": "*",
-    "entrypoints": {
-      "main": [
-        "cjminecraft.doubleslabs.fabric.OreClumps"
-      ],
-      "client": [
-        "cjminecraft.doubleslabs.fabric.client.OreClumpsClient"
-      ]
-    },
-    "mixins": [
-      "oreclumps.mixins.json"
-    ],
-  
-    "depends": {
-      "fabricloader": ">=0.14",
-      "fabric": "*",
-      "minecraft": "1.19.x",
-      "java": ">=17"
-    }
+    "fabric-datagen": [
+      "cjminecraft.oreclumps.fabric.data.OCDataGen"
+    ]
+  },
+  "mixins": [
+    "oreclumps.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
   }
+}
   

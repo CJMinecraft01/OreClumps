@@ -1,0 +1,12 @@
+{
+  "type": "oreclumps:raw_ore_smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "tungsten_ingot",
+  "ingredient": {
+    "item": "oreclumps:raw_tungsten"
+  },
+  "result": {
+    "tag": "c:tungsten_ingots"
+  }
+}

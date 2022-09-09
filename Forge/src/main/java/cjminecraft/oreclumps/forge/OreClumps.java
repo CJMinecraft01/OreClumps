@@ -4,10 +4,7 @@ import cjminecraft.oreclumps.common.Constants;
 import cjminecraft.oreclumps.forge.common.init.OCItems;
 import cjminecraft.oreclumps.forge.common.init.OCLootModifiers;
 import cjminecraft.oreclumps.forge.common.init.OCRecipes;
-import cjminecraft.oreclumps.forge.data.OCItemModelProvider;
-import cjminecraft.oreclumps.forge.data.OCItemTagsProvider;
-import cjminecraft.oreclumps.forge.data.OCLanguageProvider;
-import cjminecraft.oreclumps.forge.data.OCRecipeProvider;
+import cjminecraft.oreclumps.forge.data.*;
 import com.google.common.collect.Lists;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
@@ -41,6 +38,7 @@ public class OreClumps {
 
         generator.addProvider(event.includeServer(), new OCRecipeProvider(generator));
         generator.addProvider(event.includeServer(), new OCItemTagsProvider(generator, existingFileHelper));
+        generator.addProvider(event.includeServer(), new OCGlobalLootModifierProvider(generator));
     }
 
 }

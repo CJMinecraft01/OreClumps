@@ -1,0 +1,12 @@
+{
+  "type": "oreclumps:raw_ore_smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "tin_ingot",
+  "ingredient": {
+    "item": "oreclumps:raw_tin"
+  },
+  "result": {
+    "tag": "forge:ingots/tin"
+  }
+}

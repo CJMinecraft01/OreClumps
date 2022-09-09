@@ -13,7 +13,7 @@ public class OCRecipes {
 
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, Constants.MODID);
 
-    public static final RegistryObject<RecipeSerializer<?>> RAW_ORE_SMELTING_RECIPE_SERIALIZER = SERIALIZERS.register("raw_ore_smelting", () -> new RawOreRecipeSerializer<>(SmeltingRecipe::new, 200));
-    public static final RegistryObject<RecipeSerializer<?>> RAW_ORE_BLASTING_RECIPE_SERIALIZER = SERIALIZERS.register("raw_ore_smelting", () -> new RawOreRecipeSerializer<>(BlastingRecipe::new, 100));
+    public static final RegistryObject<RawOreRecipeSerializer<?>> RAW_ORE_SMELTING_RECIPE_SERIALIZER = SERIALIZERS.register("raw_ore_smelting", () -> new RawOreRecipeSerializer<>(SmeltingRecipe::new, 200));
+    public static final RegistryObject<RawOreRecipeSerializer<?>> RAW_ORE_BLASTING_RECIPE_SERIALIZER = SERIALIZERS.register("raw_ore_blasting", () -> new RawOreRecipeSerializer<>(BlastingRecipe::new, 100));
 
 }

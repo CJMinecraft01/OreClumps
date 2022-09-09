@@ -2,6 +2,8 @@ package cjminecraft.oreclumps.fabric.common.init;
 
 import cjminecraft.oreclumps.common.Constants;
 import cjminecraft.oreclumps.common.recipe.RawOreRecipeSerializer;
+import cjminecraft.oreclumps.fabric.common.recipe.RawOreBlastingRecipe;
+import cjminecraft.oreclumps.fabric.common.recipe.RawOreSmeltingRecipe;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.BlastingRecipe;
@@ -22,8 +24,8 @@ public class OCRecipes {
     }
 
     public static void register() {
-        RAW_ORE_SMELTING_RECIPE_SERIALIZER = register("raw_ore_smelting", new RawOreRecipeSerializer<>(SmeltingRecipe::new, 200));
-        RAW_ORE_BLASTING_RECIPE_SERIALIZER = register("raw_ore_blasting", new RawOreRecipeSerializer<>(BlastingRecipe::new, 100));
+        RAW_ORE_SMELTING_RECIPE_SERIALIZER = register("raw_ore_smelting", new RawOreRecipeSerializer<>(RawOreSmeltingRecipe::new, 200));
+        RAW_ORE_BLASTING_RECIPE_SERIALIZER = register("raw_ore_blasting", new RawOreRecipeSerializer<>(RawOreBlastingRecipe::new, 100));
     }
 
 }

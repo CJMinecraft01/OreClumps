@@ -15,6 +15,7 @@ import net.minecraft.util.ExtraCodecs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunction;
@@ -117,7 +118,7 @@ public class RawOreModifier extends LootModifier {
     }
 
     private String getReplaceString() {
-        return this.blockToReplace == null ? "#" + this.getTag().location() : Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(this.blockToReplace)).toString();
+        return this.blockToReplace == null || this.blockToReplace.equals(Blocks.AIR) ? "#" + this.getTag().location() : Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(this.blockToReplace)).toString();
     }
 
     public boolean shouldOverrideDrop(BlockState state) {

@@ -28,6 +28,6 @@
       "function": "minecraft:explosion_decay"
     }
   ],
-  "replace": "minecraft:air",
+  "replace": "#forge:ores/cobalt",
   "replacement": "oreclumps:raw_cobalt"
 }

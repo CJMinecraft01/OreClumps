@@ -3,6 +3,7 @@ package cjminecraft.oreclumps.forge;
 import cjminecraft.oreclumps.common.Constants;
 import cjminecraft.oreclumps.forge.common.init.OCItems;
 import cjminecraft.oreclumps.forge.common.init.OCRecipes;
+import cjminecraft.oreclumps.forge.data.OCItemModelProvider;
 import cjminecraft.oreclumps.forge.data.OCRecipeProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -28,7 +29,7 @@ public class OreClumps {
         final DataGenerator generator = event.getGenerator();
 
         if (event.includeClient()) {
-
+            generator.addProvider(true, new OCItemModelProvider(generator, existingFileHelper));
         }
         if (event.includeServer()) {
             generator.addProvider(true, new OCRecipeProvider(generator));

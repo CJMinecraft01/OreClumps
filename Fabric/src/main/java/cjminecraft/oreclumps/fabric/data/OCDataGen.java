@@ -7,5 +7,6 @@ public class OCDataGen implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         fabricDataGenerator.addProvider(OCRecipeGenerator::new);
+        fabricDataGenerator.addProvider(OCModelGenerator::new);
     }
 }

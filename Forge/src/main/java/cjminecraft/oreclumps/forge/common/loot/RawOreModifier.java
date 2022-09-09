@@ -21,6 +21,7 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunction;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemConditions;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.common.loot.LootModifierManager;
@@ -29,6 +30,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.Objects;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class RawOreModifier extends LootModifier {
@@ -115,6 +117,18 @@ public class RawOreModifier extends LootModifier {
 
     public int getXpMax() {
         return this.xpMax;
+    }
+
+    public boolean shouldOverrideXp() {
+        return this.xpMin > 0 && this.xpMax > 0;
+    }
+
+    public final LootItemCondition[] getConditions() {
+        return this.conditions;
+    }
+
+    public final Predicate<LootContext> getPredicate() {
+        return LootItemConditions.andConditions(this.conditions);
     }
 
     private String getReplaceString() {

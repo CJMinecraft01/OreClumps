@@ -9,5 +9,6 @@ public class OreClumps implements ModInitializer {
     public void onInitialize() {
         OCItems.register();
         OCRecipes.register();
+        // todo: need to have the raw ore blocks
     }
 }

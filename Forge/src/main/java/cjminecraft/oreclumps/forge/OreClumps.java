@@ -27,6 +27,7 @@ public class OreClumps {
 
         OCItems.ITEMS.register(mod);
         OCRecipes.SERIALIZERS.register(mod);
+        // todo: need to have the raw ore blocks
     }
 
     private void gatherData(final GatherDataEvent event) {

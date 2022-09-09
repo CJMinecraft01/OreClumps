@@ -4,7 +4,9 @@ import cjminecraft.oreclumps.common.Constants;
 import cjminecraft.oreclumps.forge.common.init.OCItems;
 import cjminecraft.oreclumps.forge.common.init.OCRecipes;
 import cjminecraft.oreclumps.forge.data.OCItemModelProvider;
+import cjminecraft.oreclumps.forge.data.OCLanguageProvider;
 import cjminecraft.oreclumps.forge.data.OCRecipeProvider;
+import com.google.common.collect.Lists;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -30,6 +32,7 @@ public class OreClumps {
 
         if (event.includeClient()) {
             generator.addProvider(true, new OCItemModelProvider(generator, existingFileHelper));
+            Lists.newArrayList("en_us", "en_gb").forEach(l -> generator.addProvider(true, new OCLanguageProvider(generator, l)));
         }
         if (event.includeServer()) {
             generator.addProvider(true, new OCRecipeProvider(generator));

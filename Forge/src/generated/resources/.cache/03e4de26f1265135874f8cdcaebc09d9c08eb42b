@@ -1,0 +1,18 @@
+// 1.19.2	2022-09-09T12:52:08.1422034	Tags for minecraft:item
+ea581a248bac3a10001f769a44eb968e319905cd data/forge/tags/items/ores.json
+26a1d5bb6ed02d9403d1c5f7f872be44c3f2e477 data/forge/tags/items/ores/adamantium.json
+be6120faa41f77ed200aea72eca683107633d999 data/forge/tags/items/ores/aluminum.json
+03d1722ee31d73dbe481341ef54ab88d743b185a data/forge/tags/items/ores/chromium.json
+081ed030f3f250a49c516413d3e6d8ba73dce5e7 data/forge/tags/items/ores/cobalt.json
+e005405d6d64fa19981999ceebe7e4686d322909 data/forge/tags/items/ores/lead.json
+59b6f13dfa2b5539985849e5956cc9eeb0a399d7 data/forge/tags/items/ores/mythril.json
+8a1f6ac11d7d27f5a3a7d8af4bae824e3fe0a41f data/forge/tags/items/ores/nickel.json
+05bab6cbe625b2562a3736ab2e30a27d67fa4409 data/forge/tags/items/ores/osmium.json
+aa19ffb7b023939672b5e894a6bd9115db8975c7 data/forge/tags/items/ores/platinum.json
+7721dfcb389e5c8c7c7c8ec1ef46bb782901eed3 data/forge/tags/items/ores/silver.json
+36aad91022dfdba6c37c08321c45845fe599ab8c data/forge/tags/items/ores/thorium.json
+df91b193c0b60d1f2a9860898063fd1403b30d04 data/forge/tags/items/ores/tin.json
+eb4c9542d508248a1582fae270cb10480d54e8b4 data/forge/tags/items/ores/titanium.json
+a14b6fab6bb8b67c0e8b83b64801e3a2ebfb7b1b data/forge/tags/items/ores/tungsten.json
+3cb033c84e94b4ae3d87854275d69c724375597a data/forge/tags/items/ores/uranium.json
+763ff476d58ff6e4df510252d9a746227c08140c data/forge/tags/items/ores/zinc.json

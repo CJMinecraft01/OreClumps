@@ -4,11 +4,14 @@ import cjminecraft.oreclumps.common.Constants;
 import cjminecraft.oreclumps.forge.common.init.OCItems;
 import cjminecraft.oreclumps.forge.common.init.OCRecipes;
 import cjminecraft.oreclumps.forge.data.OCItemModelProvider;
+import cjminecraft.oreclumps.forge.data.OCItemTagsProvider;
 import cjminecraft.oreclumps.forge.data.OCLanguageProvider;
 import cjminecraft.oreclumps.forge.data.OCRecipeProvider;
 import com.google.common.collect.Lists;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ForgeItemTagsProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -30,13 +33,11 @@ public class OreClumps {
         final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         final DataGenerator generator = event.getGenerator();
 
-        if (event.includeClient()) {
-            generator.addProvider(true, new OCItemModelProvider(generator, existingFileHelper));
-            Lists.newArrayList("en_us", "en_gb").forEach(l -> generator.addProvider(true, new OCLanguageProvider(generator, l)));
-        }
-        if (event.includeServer()) {
-            generator.addProvider(true, new OCRecipeProvider(generator));
-        }
+        generator.addProvider(event.includeClient(), new OCItemModelProvider(generator, existingFileHelper));
+        Lists.newArrayList("en_us", "en_gb").forEach(l -> generator.addProvider(event.includeClient(), new OCLanguageProvider(generator, l)));
+
+        generator.addProvider(event.includeServer(), new OCRecipeProvider(generator));
+        generator.addProvider(event.includeServer(), new OCItemTagsProvider(generator, existingFileHelper));
     }
 
 }

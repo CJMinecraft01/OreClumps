@@ -8,10 +8,13 @@ import com.google.gson.JsonParser;
 import com.mojang.logging.LogUtils;
 import com.mojang.serialization.Dynamic;
 import com.mojang.serialization.JsonOps;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.Deserializers;
+import net.minecraft.world.level.storage.loot.LootContext;
 import org.slf4j.Logger;
 
 import java.io.Reader;
@@ -67,5 +70,12 @@ public class LootModifierManager implements SimpleSynchronousResourceReloadListe
 
     public List<GlobalLootModifier> getModifiers() {
         return modifiers;
+    }
+
+    public static ObjectArrayList<ItemStack> modifyLoot(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+        for (GlobalLootModifier mod : INSTANCE.getModifiers()) {
+            generatedLoot = mod.apply(generatedLoot, context);
+        }
+        return generatedLoot;
     }
 }

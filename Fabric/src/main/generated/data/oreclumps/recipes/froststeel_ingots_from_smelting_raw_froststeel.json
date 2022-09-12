@@ -1,0 +1,12 @@
+{
+  "type": "oreclumps:raw_ore_smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "froststeel",
+  "ingredient": {
+    "item": "oreclumps:raw_froststeel"
+  },
+  "result": {
+    "tag": "c:froststeel_ingots"
+  }
+}

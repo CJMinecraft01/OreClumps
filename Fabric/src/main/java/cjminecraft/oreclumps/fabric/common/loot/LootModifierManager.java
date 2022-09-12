@@ -2,6 +2,7 @@ package cjminecraft.oreclumps.fabric.common.loot;
 
 import cjminecraft.oreclumps.common.Constants;
 import com.google.common.collect.ImmutableList;
+import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.mojang.logging.LogUtils;
@@ -10,6 +11,7 @@ import com.mojang.serialization.JsonOps;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.world.level.storage.loot.Deserializers;
 import org.slf4j.Logger;
 
 import java.io.Reader;
@@ -18,8 +20,9 @@ import java.util.List;
 public class LootModifierManager implements SimpleSynchronousResourceReloadListener {
 
     public static final LootModifierManager INSTANCE = new LootModifierManager();
+    public static final Gson GSON_INSTANCE = Deserializers.createFunctionSerializer().create();
 
-    private static final Logger LOGGER = LogUtils.getLogger();
+    protected static final Logger LOGGER = LogUtils.getLogger();
     private List<GlobalLootModifier> modifiers = ImmutableList.of();
 
     @Override
@@ -29,7 +32,6 @@ public class LootModifierManager implements SimpleSynchronousResourceReloadListe
 
     @Override
     public void onResourceManagerReload(ResourceManager resourceManager) {
-        LOGGER.info("Loading");
         ImmutableList.Builder<GlobalLootModifier> builder = new ImmutableList.Builder<>();
         resourceManager.listResources("loot_modifiers", l -> l.getPath().endsWith(".json")).forEach(
                 (location, resource) -> {
@@ -60,7 +62,7 @@ public class LootModifierManager implements SimpleSynchronousResourceReloadListe
                 }
         );
         this.modifiers = builder.build();
-        LOGGER.info("Registered {} loot modifiers", this.modifiers.size());
+        LOGGER.info("Loaded {} loot modifiers", this.modifiers.size());
     }
 
     public List<GlobalLootModifier> getModifiers() {

@@ -1,5 +1,6 @@
 package cjminecraft.oreclumps.fabric;
 
+import cjminecraft.oreclumps.fabric.common.init.OCCodecs;
 import cjminecraft.oreclumps.fabric.common.init.OCItems;
 import cjminecraft.oreclumps.fabric.common.init.OCLootModifiers;
 import cjminecraft.oreclumps.fabric.common.init.OCRecipes;
@@ -15,6 +16,8 @@ public class OreClumps implements ModInitializer {
         OCRecipes.register();
         OCLootModifiers.register();
         // todo: need to have the raw ore blocks
+
+        OCCodecs.load();
 
         ResourceManagerHelper.get(PackType.SERVER_DATA).registerReloadListener(LootModifierManager.INSTANCE);
     }

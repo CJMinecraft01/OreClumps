@@ -28,6 +28,6 @@ public abstract class RawOreRecipe extends AbstractCookingRecipe {
 
     @Override
     public @NotNull ItemStack getResultItem() {
-        return this.result.getItems()[0];
+        return this.result.getItems().length > 0 ? this.result.getItems()[0] : ItemStack.EMPTY;
     }
 }

@@ -1,6 +1,7 @@
 package cjminecraft.oreclumps.forge;
 
 import cjminecraft.oreclumps.common.Constants;
+import cjminecraft.oreclumps.forge.common.init.OCBlocks;
 import cjminecraft.oreclumps.forge.common.init.OCItems;
 import cjminecraft.oreclumps.forge.common.init.OCLootModifiers;
 import cjminecraft.oreclumps.forge.common.init.OCRecipes;
@@ -24,21 +25,25 @@ public class OreClumps {
         mod.addListener(this::gatherData);
 
         OCItems.ITEMS.register(mod);
+        OCBlocks.BLOCKS.register(mod);
+        OCBlocks.ITEMS.register(mod);
         OCRecipes.SERIALIZERS.register(mod);
         OCLootModifiers.LOOT_MODIFIERS.register(mod);
-        // todo: need to have the raw ore blocks
     }
 
     private void gatherData(final GatherDataEvent event) {
         final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         final DataGenerator generator = event.getGenerator();
 
+        generator.addProvider(event.includeClient(), new OCBlockModelProvider(generator, existingFileHelper));
         generator.addProvider(event.includeClient(), new OCItemModelProvider(generator, existingFileHelper));
+        generator.addProvider(event.includeClient(), new OCBlockStateProvider(generator, existingFileHelper));
         Lists.newArrayList("en_us", "en_gb").forEach(l -> generator.addProvider(event.includeClient(), new OCLanguageProvider(generator, l)));
 
         generator.addProvider(event.includeServer(), new OCRecipeProvider(generator));
         generator.addProvider(event.includeServer(), new OCItemTagsProvider(generator, existingFileHelper));
         generator.addProvider(event.includeServer(), new OCGlobalLootModifierProvider(generator));
+        generator.addProvider(event.includeServer(), new OCLootTableProvider(generator));
     }
 
 }

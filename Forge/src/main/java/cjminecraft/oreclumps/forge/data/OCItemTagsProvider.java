@@ -35,7 +35,10 @@ public class OCItemTagsProvider extends TagsProvider<Item> {
                 OCItems.RAW_TITANIUM.get(),
                 OCItems.RAW_TUNGSTEN.get(),
                 OCItems.RAW_ADAMANTIUM.get(),
-                OCItems.RAW_MYTHRIL.get()
+                OCItems.RAW_MYTHRIL.get(),
+                OCItems.RAW_QUICKSILVER.get(),
+                OCItems.RAW_FROSTSTEEL.get(),
+                OCItems.RAW_CLOGGRUM.get()
         );
         
         tag(ItemTags.create(new ResourceLocation("forge", "ores/lead")))
@@ -70,5 +73,11 @@ public class OCItemTagsProvider extends TagsProvider<Item> {
                 .add(OCItems.RAW_ADAMANTIUM.get());
         tag(ItemTags.create(new ResourceLocation("forge", "ores/mythril")))
                 .add(OCItems.RAW_MYTHRIL.get());
+        tag(ItemTags.create(new ResourceLocation("forge", "ores/quicksilver")))
+                .add(OCItems.RAW_QUICKSILVER.get());
+        tag(ItemTags.create(new ResourceLocation("forge", "ores/froststeel")))
+                .add(OCItems.RAW_FROSTSTEEL.get());
+        tag(ItemTags.create(new ResourceLocation("forge", "ores/cloggrum")))
+                .add(OCItems.RAW_CLOGGRUM.get());
     }
 }

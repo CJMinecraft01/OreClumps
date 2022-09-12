@@ -1,0 +1,12 @@
+{
+  "type": "oreclumps:raw_ore_blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "froststeel",
+  "ingredient": {
+    "item": "oreclumps:raw_froststeel"
+  },
+  "result": {
+    "tag": "forge:ingots/froststeel"
+  }
+}

@@ -26,6 +26,9 @@ public class OCItems {
     public static Item RAW_TUNGSTEN;
     public static Item RAW_ADAMANTIUM;
     public static Item RAW_MYTHRIL;
+    public static Item RAW_QUICKSILVER;
+    public static Item RAW_FROSTSTEEL;
+    public static Item RAW_CLOGGRUM;
 
     public static void register() {
         RAW_LEAD = register("raw_lead");
@@ -44,6 +47,9 @@ public class OCItems {
         RAW_TUNGSTEN = register("raw_tungsten");
         RAW_ADAMANTIUM = register("raw_adamantium");
         RAW_MYTHRIL = register("raw_mythril");
+        RAW_QUICKSILVER = register("raw_quicksilver");
+        RAW_FROSTSTEEL = register("raw_froststeel");
+        RAW_CLOGGRUM = register("raw_cloggrum");
     }
 
     private static Item register(String name) {

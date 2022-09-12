@@ -1,0 +1,12 @@
+{
+  "type": "oreclumps:raw_ore_smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "cloggrum",
+  "ingredient": {
+    "item": "oreclumps:raw_cloggrum"
+  },
+  "result": {
+    "tag": "forge:ingots/cloggrum"
+  }
+}

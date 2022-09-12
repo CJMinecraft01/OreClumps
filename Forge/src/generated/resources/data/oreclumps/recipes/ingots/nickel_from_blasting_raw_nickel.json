@@ -2,7 +2,7 @@
   "type": "oreclumps:raw_ore_blasting",
   "cookingtime": 100,
   "experience": 0.7,
-  "group": "nickel_ingot",
+  "group": "nickel",
   "ingredient": {
     "item": "oreclumps:raw_nickel"
   },

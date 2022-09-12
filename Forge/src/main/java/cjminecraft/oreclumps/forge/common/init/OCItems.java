@@ -29,5 +29,8 @@ public class OCItems {
     public static final RegistryObject<Item> RAW_TUNGSTEN = ITEMS.register("raw_tungsten", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> RAW_ADAMANTIUM = ITEMS.register("raw_adamantium", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> RAW_MYTHRIL = ITEMS.register("raw_mythril", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> RAW_QUICKSILVER = ITEMS.register("raw_quicksilver", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> RAW_FROSTSTEEL = ITEMS.register("raw_froststeel", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> RAW_CLOGGRUM = ITEMS.register("raw_cloggrum", () -> new Item(PROPERTIES));
 
 }

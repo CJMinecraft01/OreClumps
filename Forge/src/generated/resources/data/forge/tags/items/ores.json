@@ -15,6 +15,9 @@
     "oreclumps:raw_titanium",
     "oreclumps:raw_tungsten",
     "oreclumps:raw_adamantium",
-    "oreclumps:raw_mythril"
+    "oreclumps:raw_mythril",
+    "oreclumps:raw_quicksilver",
+    "oreclumps:raw_froststeel",
+    "oreclumps:raw_cloggrum"
   ]
 }

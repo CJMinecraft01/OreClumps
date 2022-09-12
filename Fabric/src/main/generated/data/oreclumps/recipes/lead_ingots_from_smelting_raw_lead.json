@@ -2,7 +2,7 @@
   "type": "oreclumps:raw_ore_smelting",
   "cookingtime": 200,
   "experience": 0.7,
-  "group": "lead_ingot",
+  "group": "lead",
   "ingredient": {
     "item": "oreclumps:raw_lead"
   },

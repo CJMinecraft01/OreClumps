@@ -1,6 +1,7 @@
 package cjminecraft.oreclumps.fabric.data;
 
 import cjminecraft.oreclumps.common.Constants;
+import cjminecraft.oreclumps.fabric.common.init.OCBlocks;
 import cjminecraft.oreclumps.fabric.common.init.OCItems;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -9,6 +10,7 @@ import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
@@ -49,6 +51,29 @@ public class OCLanguageGenerator implements DataProvider {
                 add(OCItems.RAW_TUNGSTEN, "Raw Tungsten");
                 add(OCItems.RAW_ADAMANTIUM, "Raw Adamantium");
                 add(OCItems.RAW_MYTHRIL, "Raw Mythril");
+                add(OCItems.RAW_QUICKSILVER, "Raw Quicksilver");
+                add(OCItems.RAW_FROSTSTEEL, "Raw Frost Steel");
+                add(OCItems.RAW_CLOGGRUM, "Raw Cloggrum");
+
+                add(OCBlocks.RAW_LEAD_BLOCK, "Block of Raw Lead");
+                add(OCBlocks.RAW_NICKEL_BLOCK, "Block of Raw Nickel");
+                add(OCBlocks.RAW_SILVER_BLOCK, "Block of Raw Silver");
+                add(OCBlocks.RAW_TIN_BLOCK, "Block of Raw Tin");
+                add(OCBlocks.RAW_URANIUM_BLOCK, "Block of Raw Uranium");
+                add(OCBlocks.RAW_OSMIUM_BLOCK, "Block of Raw Osmium");
+                add(OCBlocks.RAW_ZINC_BLOCK, "Block of Raw Zinc");
+                add(OCBlocks.RAW_ALUMINUM_BLOCK, locale.equals("en_us") ? "Block of Raw Aluminum" : "Block of Raw Aluminium");
+                add(OCBlocks.RAW_CHROMIUM_BLOCK, "Block of Raw Chromium");
+                add(OCBlocks.RAW_COBALT_BLOCK, "Block of Raw Cobalt");
+                add(OCBlocks.RAW_PLATINUM_BLOCK, "Block of Raw Platinum");
+                add(OCBlocks.RAW_THORIUM_BLOCK, "Block of Raw Thorium");
+                add(OCBlocks.RAW_TITANIUM_BLOCK, "Block of Raw Titanium");
+                add(OCBlocks.RAW_TUNGSTEN_BLOCK, "Block of Raw Tungsten");
+                add(OCBlocks.RAW_ADAMANTIUM_BLOCK, "Block of Raw Adamantium");
+                add(OCBlocks.RAW_MYTHRIL_BLOCK, "Block of Raw Mythril");
+                add(OCBlocks.RAW_QUICKSILVER_BLOCK, "Block of Raw Quicksilver");
+                add(OCBlocks.RAW_FROSTSTEEL_BLOCK, "Block of Raw Frost Steel");
+                add(OCBlocks.RAW_CLOGGRUM_BLOCK, "Block of Raw Cloggrum");
             }
         }
     }
@@ -75,6 +100,10 @@ public class OCLanguageGenerator implements DataProvider {
     }
 
     public void add(Item key, String name) {
+        add(key.getDescriptionId(), name);
+    }
+
+    public void add(Block key, String name) {
         add(key.getDescriptionId(), name);
     }
 

@@ -2,7 +2,7 @@
   "type": "oreclumps:raw_ore_smelting",
   "cookingtime": 200,
   "experience": 0.7,
-  "group": "uranium_ingot",
+  "group": "uranium",
   "ingredient": {
     "item": "oreclumps:raw_uranium"
   },

@@ -1,5 +1,6 @@
 package cjminecraft.oreclumps.fabric.data;
 
+import cjminecraft.oreclumps.fabric.common.init.OCBlocks;
 import cjminecraft.oreclumps.fabric.common.init.OCItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -14,7 +15,25 @@ public class OCModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
-
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_LEAD_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_NICKEL_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_SILVER_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_TIN_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_URANIUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_OSMIUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_ZINC_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_ALUMINUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_CHROMIUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_COBALT_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_PLATINUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_THORIUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_TITANIUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_TUNGSTEN_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_ADAMANTIUM_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_MYTHRIL_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_QUICKSILVER_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_FROSTSTEEL_BLOCK);
+        blockStateModelGenerator.createTrivialCube(OCBlocks.RAW_CLOGGRUM_BLOCK);
     }
 
     @Override
@@ -35,5 +54,8 @@ public class OCModelGenerator extends FabricModelProvider {
         itemModelGenerator.generateFlatItem(OCItems.RAW_TUNGSTEN, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(OCItems.RAW_ADAMANTIUM, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(OCItems.RAW_MYTHRIL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(OCItems.RAW_QUICKSILVER, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(OCItems.RAW_FROSTSTEEL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(OCItems.RAW_CLOGGRUM, ModelTemplates.FLAT_ITEM);
     }
 }

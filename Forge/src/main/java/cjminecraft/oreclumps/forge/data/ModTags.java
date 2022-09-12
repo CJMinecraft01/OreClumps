@@ -23,5 +23,8 @@ public class ModTags {
     public static final TagKey<Item> TUNGSTEN_INGOTS = ItemTags.create(new ResourceLocation("forge", "ingots/tungsten"));
     public static final TagKey<Item> ADAMANTIUM_INGOTS = ItemTags.create(new ResourceLocation("forge", "ingots/adamantium"));
     public static final TagKey<Item> MYTHRIL_INGOTS = ItemTags.create(new ResourceLocation("forge", "ingots/mythril"));
+    public static final TagKey<Item> QUICKSILVER_INGOTS = ItemTags.create(new ResourceLocation("forge", "ingots/quicksilver"));
+    public static final TagKey<Item> FROSTSTEEL_INGOTS = ItemTags.create(new ResourceLocation("forge", "ingots/froststeel"));
+    public static final TagKey<Item> CLOGGRUM_INGOTS = ItemTags.create(new ResourceLocation("forge", "ingots/cloggrum"));
 
 }

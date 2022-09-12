@@ -1,14 +1,17 @@
-// 1.19.2	2022-09-09T12:52:08.1422034	Tags for minecraft:item
-ea581a248bac3a10001f769a44eb968e319905cd data/forge/tags/items/ores.json
+// 1.19.2	2022-09-12T12:09:36.8093798	Tags for minecraft:item
+4c6ef1b123eb7b601700640dc3af470faff1ea52 data/forge/tags/items/ores.json
 26a1d5bb6ed02d9403d1c5f7f872be44c3f2e477 data/forge/tags/items/ores/adamantium.json
 be6120faa41f77ed200aea72eca683107633d999 data/forge/tags/items/ores/aluminum.json
 03d1722ee31d73dbe481341ef54ab88d743b185a data/forge/tags/items/ores/chromium.json
+1c935c8094b6c424829fe85c958a34bea8108692 data/forge/tags/items/ores/cloggrum.json
 081ed030f3f250a49c516413d3e6d8ba73dce5e7 data/forge/tags/items/ores/cobalt.json
+614510735f0846b17d86c93e858b8a5e068a154c data/forge/tags/items/ores/froststeel.json
 e005405d6d64fa19981999ceebe7e4686d322909 data/forge/tags/items/ores/lead.json
 59b6f13dfa2b5539985849e5956cc9eeb0a399d7 data/forge/tags/items/ores/mythril.json
 8a1f6ac11d7d27f5a3a7d8af4bae824e3fe0a41f data/forge/tags/items/ores/nickel.json
 05bab6cbe625b2562a3736ab2e30a27d67fa4409 data/forge/tags/items/ores/osmium.json
 aa19ffb7b023939672b5e894a6bd9115db8975c7 data/forge/tags/items/ores/platinum.json
+a59476277bd16e1ff715403ce47df53fc11248cb data/forge/tags/items/ores/quicksilver.json
 7721dfcb389e5c8c7c7c8ec1ef46bb782901eed3 data/forge/tags/items/ores/silver.json
 36aad91022dfdba6c37c08321c45845fe599ab8c data/forge/tags/items/ores/thorium.json
 df91b193c0b60d1f2a9860898063fd1403b30d04 data/forge/tags/items/ores/tin.json

@@ -6,6 +6,7 @@
     "oreclumps:raw_tin",
     "oreclumps:raw_nickel",
     "oreclumps:raw_platinum",
+    "oreclumps:raw_quicksilver",
     "oreclumps:raw_chromium",
     "oreclumps:raw_adamantium",
     "oreclumps:raw_silver",
@@ -14,6 +15,8 @@
     "oreclumps:raw_titanium",
     "oreclumps:raw_thorium",
     "oreclumps:raw_uranium",
+    "oreclumps:raw_froststeel",
+    "oreclumps:raw_cloggrum",
     "oreclumps:raw_zinc",
     "oreclumps:raw_tungsten"
   ],

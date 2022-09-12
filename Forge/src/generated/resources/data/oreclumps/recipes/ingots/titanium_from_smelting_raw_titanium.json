@@ -2,7 +2,7 @@
   "type": "oreclumps:raw_ore_smelting",
   "cookingtime": 200,
   "experience": 0.7,
-  "group": "titanium_ingot",
+  "group": "titanium",
   "ingredient": {
     "item": "oreclumps:raw_titanium"
   },

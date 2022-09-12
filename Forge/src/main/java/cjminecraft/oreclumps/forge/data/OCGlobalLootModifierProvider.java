@@ -2,6 +2,7 @@ package cjminecraft.oreclumps.forge.data;
 
 import cjminecraft.oreclumps.common.Constants;
 import cjminecraft.oreclumps.forge.common.init.OCItems;
+import cjminecraft.oreclumps.forge.common.init.OCLootModifiers;
 import cjminecraft.oreclumps.forge.common.loot.RawOreModifier;
 import net.minecraft.advancements.critereon.EnchantmentPredicate;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -47,5 +48,8 @@ public class OCGlobalLootModifierProvider extends GlobalLootModifierProvider {
         add("raw_tungsten", new RawOreModifier(conditions, functions, "#forge:ores/tungsten", OCItems.RAW_TUNGSTEN.get(), 0, 0));
         add("raw_adamantium", new RawOreModifier(conditions, functions, "#forge:ores/adamantium", OCItems.RAW_ADAMANTIUM.get(), 0, 0));
         add("raw_mythril", new RawOreModifier(conditions, functions, "#forge:ores/mythril", OCItems.RAW_MYTHRIL.get(), 0, 0));
+        add("raw_quicksilver", new RawOreModifier(conditions, functions, "#forge:ores/quicksilver", OCItems.RAW_QUICKSILVER.get(), 0, 0));
+        add("raw_froststeel", new RawOreModifier(conditions, functions, "#forge:ores/froststeel", OCItems.RAW_FROSTSTEEL.get(), 0, 0));
+        add("raw_cloggrum", new RawOreModifier(conditions, functions, "#forge:ores/cloggrum", OCItems.RAW_CLOGGRUM.get(), 0, 0));
     }
 }

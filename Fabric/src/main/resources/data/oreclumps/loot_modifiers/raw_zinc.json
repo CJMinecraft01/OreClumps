@@ -28,6 +28,6 @@
       "function": "minecraft:explosion_decay"
     }
   ],
-  "replace": "#forge:ores/zinc",
+  "replace": "#c:zinc_ores",
   "replacement": "oreclumps:raw_zinc"
 }

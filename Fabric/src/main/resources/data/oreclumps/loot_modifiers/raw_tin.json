@@ -28,6 +28,6 @@
       "function": "minecraft:explosion_decay"
     }
   ],
-  "replace": "#forge:ores/tin",
+  "replace": "#c:tin_ores",
   "replacement": "oreclumps:raw_tin"
 }

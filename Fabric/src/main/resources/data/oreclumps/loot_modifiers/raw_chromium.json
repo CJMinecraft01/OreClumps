@@ -28,6 +28,6 @@
       "function": "minecraft:explosion_decay"
     }
   ],
-  "replace": "#forge:ores/chromium",
+  "replace": "#c:chromium_ores",
   "replacement": "oreclumps:raw_chromium"
 }

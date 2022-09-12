@@ -28,6 +28,6 @@
       "function": "minecraft:explosion_decay"
     }
   ],
-  "replace": "#forge:ores/osmium",
+  "replace": "#c:osmium_ores",
   "replacement": "oreclumps:raw_osmium"
 }

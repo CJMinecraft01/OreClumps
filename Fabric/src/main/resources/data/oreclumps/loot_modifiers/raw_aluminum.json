@@ -28,6 +28,6 @@
       "function": "minecraft:explosion_decay"
     }
   ],
-  "replace": "#forge:ores/aluminum",
+  "replace": "#c:aluminum_ores",
   "replacement": "oreclumps:raw_aluminum"
 }

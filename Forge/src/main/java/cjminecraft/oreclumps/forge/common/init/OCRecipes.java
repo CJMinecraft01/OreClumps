@@ -1,12 +1,10 @@
 package cjminecraft.oreclumps.forge.common.init;
 
 import cjminecraft.oreclumps.common.Constants;
+import cjminecraft.oreclumps.common.recipe.RawOreBlastingRecipe;
 import cjminecraft.oreclumps.common.recipe.RawOreRecipeSerializer;
-import cjminecraft.oreclumps.forge.common.recipe.RawOreBlastingRecipe;
-import cjminecraft.oreclumps.forge.common.recipe.RawOreSmeltingRecipe;
-import net.minecraft.world.item.crafting.BlastingRecipe;
+import cjminecraft.oreclumps.common.recipe.RawOreSmeltingRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;

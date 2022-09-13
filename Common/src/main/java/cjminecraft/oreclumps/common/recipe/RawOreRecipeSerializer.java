@@ -11,7 +11,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import org.jetbrains.annotations.NotNull;
 
-public class RawOreRecipeSerializer<T extends RawOreRecipe> implements RecipeSerializer<T> {
+public class RawOreRecipeSerializer<T extends AbstractCookingRecipe & RawOreRecipe> implements RecipeSerializer<T> {
 
     private final int defaultCookingTime;
     private final CookieBaker<T> factory;
@@ -22,7 +22,7 @@ public class RawOreRecipeSerializer<T extends RawOreRecipe> implements RecipeSer
     }
 
     @Override
-    public T fromJson(@NotNull ResourceLocation resourceLocation, @NotNull JsonObject jsonObject) {
+    public @NotNull T fromJson(@NotNull ResourceLocation resourceLocation, @NotNull JsonObject jsonObject) {
         String group = GsonHelper.getAsString(jsonObject, "group", "");
         JsonElement jsonElement = GsonHelper.isArrayNode(jsonObject, "ingredient") ? GsonHelper.getAsJsonArray(jsonObject, "ingredient") : GsonHelper.getAsJsonObject(jsonObject, "ingredient");
         Ingredient ingredient = Ingredient.fromJson(jsonElement);

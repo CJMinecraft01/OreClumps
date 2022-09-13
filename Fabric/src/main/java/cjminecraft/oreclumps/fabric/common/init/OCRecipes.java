@@ -1,14 +1,12 @@
 package cjminecraft.oreclumps.fabric.common.init;
 
 import cjminecraft.oreclumps.common.Constants;
+import cjminecraft.oreclumps.common.recipe.RawOreBlastingRecipe;
 import cjminecraft.oreclumps.common.recipe.RawOreRecipeSerializer;
-import cjminecraft.oreclumps.fabric.common.recipe.RawOreBlastingRecipe;
-import cjminecraft.oreclumps.fabric.common.recipe.RawOreSmeltingRecipe;
+import cjminecraft.oreclumps.common.recipe.RawOreSmeltingRecipe;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.crafting.BlastingRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.SmeltingRecipe;
 
 public class OCRecipes {
 
